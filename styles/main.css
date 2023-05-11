@@ -1,0 +1,541 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.site-container {
+  width: 670px;
+  max-width: 678px;
+  min-width: 350px;
+  width: 100%;
+  display: block;
+}
+/*MENU PAGES LINKS*/
+body.menu1 {background: url();} 
+body.menu2 {background: url();}
+body.menu3 {background: url();}
+body.menu3 {background: url();}
+
+/* LOGO AND LOCATION SECTION ====================*/
+
+.header_logo {
+  margin-left: 80px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.location {
+  display: flex;
+  justify-content: center;
+}
+
+.location i {
+  padding-right: 10px;
+}
+
+/* DISCOVER SECTION ==================== */
+
+.location {
+  background-color: #cccccc;
+  border-top: 1px solid #979393;
+  padding: 20px;
+}
+
+
+.book {
+  flex-basis: 100%;
+  padding-left: 40px;
+  padding-right: 30px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #f2f2f2;
+}
+
+.book h1 {
+  padding-bottom: 20px;
+}
+
+.book p {
+  padding-bottom: 20px;
+  justify-content: center;
+}
+
+.explore {
+  background-image: linear-gradient(to bottom right, #eb34e1, #881b69);
+  border: 1px solid transparent;
+  color: #f2f2f2;
+  margin-left: 50px;
+  padding: 15px;
+  border-radius: 50px;
+  justify-content: center;
+  filter: drop-shadow(0 5px 3px #d0d0d0);
+  position: relative;
+}
+
+.discover:hover {
+  filter: drop-shadow(0 5px 3px #929292);
+}
+
+
+/* HOW IT WORKS SECTION ====================*/
+
+
+.mini-cards-container {
+
+  display: flex;
+  flex-direction: column;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+  width: 95%;
+  gap: 25px;
+  padding-top: 30px;
+  padding-bottom: 80px;
+  background-color: #ffffff;
+  
+}
+
+.mini-cards-container .h2 {
+  padding-top: 5px;
+  padding-left: 5px;
+}
+
+
+.mini-card {
+  display: flex;
+  flex-direction: row;
+  height: 60px;
+  margin-left: 12px;
+  background-color: #f2f2f2;
+  border-radius: 15px;
+  align-items: center;
+  gap: 20px;
+  filter: drop-shadow(0 5px 3px #d0d0d0);
+}
+
+.mini-card:hover {
+  filter: drop-shadow(0 5px 3px #929292);
+}
+
+
+.number {
+  size: 7px;
+  display: flex;
+  color: #ffffff;
+  background-color: #9356DC;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  height: 25px;
+  width: 25px;
+  position: relative;
+  right: 12px;
+}
+
+/*RESTAURANT SELECTION CONTAINER AND CARDS ==================== */
+
+.card-details {
+  display:flex;
+  flex-direction: row;
+}
+
+.card-details > div{ width: 90%;}
+.card-details > span{ width: 20%; 
+text-align: right;
+margin-top: 10px;
+font-size: 12px;}
+
+.big-cards-container .big-card .card-title {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  margin-left: 10px;
+}
+
+.big-cards-container .big-card .card-description {
+  margin-top: 5px;
+  margin-bottom: 8px;
+  margin-left: 10px;
+}
+
+.big-cards-container a {
+  text-decoration: none;
+  color: #000;
+}
+
+.big-cards-container {
+  display: flex;
+  width: 90%;
+  flex-direction: column;
+  gap: 25px;
+  justify-content: center;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 30px;
+  padding-bottom: 80px;
+  background-color: #f2f2f2;
+
+}
+
+.big-card {
+  width: 100%;
+  height: 250px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  border-radius: 25px;
+  overflow: hidden;
+  filter: drop-shadow(0 5px 3px #d0d0d0);
+  position: relative;
+}
+
+.big-card:hover {
+  filter: drop-shadow(0 5px 3px #929292);
+}
+
+ .big-card img {
+      height: 75%;
+      width: 100%;
+      object-fit: cover;
+    }
+
+    .card-title {
+      font-weight: bold;
+    }
+
+.card-content {
+  display: flex;
+  flex-direction: row;
+}
+
+.big-cards-container .big-card:hover {
+  filter: drop-shadow(0 5px 3px #929292);
+}
+
+.big-cards-container .big-card  .new:hover {
+  opacity: 0.9;
+}
+
+.big-cards-container .big-card  .new:hover {
+  filter: drop-shadow(0 5px 3px #161515);
+  background: #0b8d6e;
+}
+
+
+.big-cards-container .big-card .new {
+ 
+  font-weight: 500;
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  background-color: #99E2D0;
+  color: #0b8d6e;
+  align-content: center;
+  top: 10px;
+  right: 10px;
+  padding: 0 25px;
+  height: 30px;
+  border-radius: 3px;
+}
+
+.big-card  .new:hover {
+  opacity: 0.9;
+  color:#99E2D0;
+}
+
+/*Heart icon ==================== */
+
+.big-cards-container span.fa-regular{
+  color: gray;
+  opacity: 1;
+  transition: 0.5s all ease-in-out;
+}
+.big-cards-container span.fa-solid{
+  color: orange;
+  opacity: 0;
+  transition: 0.5s all ease-in-out;
+}
+
+.big-cards-container span.fa-solid.fa-heart:hover{
+  color: orange;
+  opacity: 1;
+  cursor: pointer;
+}
+.loader {
+  border: 8px solid #f3f3f3; /* Light grey */
+  border-top: 8px solid #5762d9; /* blue */
+  border-right: 8px solid #5762d9;
+  border-bottom: 8px solid#5762d9;
+  border-left: 8px solid #aeadaa;
+
+  border-radius: 50%; 
+  width: 10px;
+  height: 10px;
+  animation: spin 1s linear infinite, unshow 3s linear 1;
+  opacity: 0;
+
+/* Absolute Center Spinner */
+
+position: fixed;
+z-index: 999;
+overflow: show;
+margin: auto;
+top: 0;
+left: 0;
+bottom: 0;
+right: 0;
+width: 50px;
+height: 50px;
+}
+
+@keyframes unshow {
+  0% { opacity: 1.0; }
+  100% { opacity: 0.0; }
+}
+
+@keyframes spin {
+  30% { transform: rotate(30deg); }
+  100% { transform: rotate(360deg); }
+}
+ 
+    /* FOOTER */
+
+    .footer-cards-container {
+
+      width: 95%;
+
+      flex-direction: column;
+      flex-basis: 100%;
+      padding-left: 2.5%;
+      padding-right:  2.5%;
+      padding-top: 5px;
+      padding-bottom: 10px;
+      background-color: #393838;
+      color: #ffffff;
+    }
+
+    .footer_logo img {
+      filter: invert(1);
+    }
+
+    .footer_logo {
+      padding-top: 15px;
+      padding-left: 3px;
+      color: #ffffff;
+    }
+
+    .resize {
+      width: 200px;
+      height: auto;
+    }
+
+    .resize {
+      width: 100px;
+      height: auto;
+    }
+	
+	.footer_info a{
+		text-decoration: none;
+		color: #F2F2F2;
+		display: flex;
+		flex-direction: row;
+	}
+
+    .footer-card1 {
+      flex-direction: row;
+      display: flex;
+      height: 10px;
+      background-color: #393838;
+      padding-bottom: 15px;
+      margin: 10px 2px;
+      
+    }
+
+    .footer-card1 i{
+      padding-right: 20px;
+      text-decoration: none;
+    }
+
+    .footer-card2 i{
+      padding-right: 15px;
+      text-decoration: none;
+    }
+
+    .footer-card2 {
+      width: auto;
+      height: 25%;
+      background-color: #393838;
+      display: flex;
+      flex-direction: row;
+      margin: 10px 2px;
+      
+    }
+
+    .footer-card3 {
+      width: auto;
+      height: 25%;
+      background-color: #393838;
+      display: wrap;
+      flex-direction: column;
+      margin: 5px 2px;
+     
+    }
+
+    .footer-card4 {
+      width: auto;
+      height: 25%;
+      background-color: #393838;
+      display: wrap;
+      flex-direction: column;
+      padding-top: 5px;
+      padding-bottom: 10px;
+      margin: 5px 2px;
+      
+    }
+
+
+
+/*MEDIA QUERIES ====================*/
+
+    /*Desktop ======================*/
+
+    @media screen and (min-width: 995px) and (max-width: 1050px) {
+
+      .site-container {
+        width: 995px;
+        max-width: 1050px;
+        min-width: 992px;
+        width: 95%;
+        display: block;
+        margin: 0 auto;
+      }
+
+      .big-cards-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+    }
+
+      /*Tablet ====================*/
+
+      @media screen and (min-width: 768px) and (max-width: 992px) {
+        .site-container {
+          max-width: 800px;
+          min-width: 680px;
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+        }
+
+       .header_logo {
+          margin-left: 38%;
+       }
+
+       .book {
+        flex-basis: 100%;
+        padding-left: 35%;
+        padding-right: 30px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+      }
+      
+      .book h1 {
+        padding-bottom: 20px;
+        padding-left: 20px;
+      }
+      
+      .book p {
+        padding-left: -5%;
+      }
+
+      #sec_howto h2 {
+        padding-left: 50px;
+      }
+        
+        .mini-cards-container {
+          display: flex;
+          flex-direction: row;
+          width: 70%;
+          padding-left: 60px;
+          padding-bottom: 50px;
+          gap: 70px;
+        }
+        
+        .mini-card {
+          display: flex;
+          flex-direction: row;
+          width: 100%;
+          margin-left: 12px;
+          border-radius: 15px;
+          gap: 20px;
+        }
+
+        .cards-container .mini-card:hover {
+          filter: drop-shadow(0 5px 3px #d0d0d0);
+        }
+        .cards-container .mini-card:hover {
+          filter: drop-shadow(0 5px 3px #929292);
+        }
+        .cards-container .mini-card:hover {
+          background-color: #F2f2f2;
+        }
+        
+        .number {
+          display: flex;
+          border-radius: 10px;
+          height: 25px;
+          width: 35px;
+          position: relative;
+        }
+
+        .big-cards-container {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: left;
+          margin-top: 5px;
+          }
+
+          .big-cards-container h2{
+          text-align:center;
+            }
+
+        .cards-container .big-card {
+          display: flex;
+          flex-direction: row;
+          flex-wrap:wrap;
+          width: 33%;
+          border-radius: 15px;
+          align-items: center;
+          gap: 100px;
+        
+        }
+
+        .footer_logo {
+          padding-top: 2%;
+          padding-left: 45%;
+          padding-bottom: 2%;
+        }
+        .footer-card1 {
+          padding-left: 40%;
+        }
+
+        .footer-card2 {
+          padding-left: 40%;
+        }
+
+        .footer-card3 {
+          padding-left: 45%;
+        }
+
+        .footer-card4 {
+          padding-left: 45%;
+        }
+
+      }
+
+
+    /* ==================== FONTS
+Primary Purple #9356DC 
+Secondary Pink #FF79DA 
+Tertiary Mint #99E2D0 ====================*/

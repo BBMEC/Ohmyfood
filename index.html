@@ -1,182 +1,228 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Ohmyfood</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta charset="utf-8" >
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-        <meta name ="description"
+
+<head>
+    <!-- standard information -->
+
+    <title>Ohmyfood</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description"
         content="Ohmyfood is an luxury online food ordering company that puts the customer in control of creating their own menu before stepping foot in one of the gastronomic restaurants. 
-        The concept allows users to make their gastronomic choices in advance, thereby reducing their waiting time in restaurants and improving their experience">  
-        
-        <!-- Font Awesome, stylesheet and relevant font library -->
+        The concept allows users to make their gastronomic choices in advance, thereby reducing their waiting time in restaurants and improving their experience">
 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" >
-        <link href="style.css" type="text/css" rel="stylesheet">
+    <!-- Font Awesome, stylesheet and relevant font library -->
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-	    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link href="styles/main.css" type="text/css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-     
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700;900&family=Shrikhand&display=swap" rel="stylesheet">
+
 </head>
 
-    <body>
-<!-- HEADER SECTION ==================== -->
+<body>
 
-<div class="site-container">
-    <header>
-      <section id="sec_header"> 
+   <!-- MENU PAGES LINKS -->
+   <!-- <body class="menu1">The Full Palette
+        <body class="menu2">The Enchanted Plate
+        <body class="menu3">Bastille
+        <body class="menu4">Le Gourmand -->
+
+    <!-- LOGO AND LOCATION SECTION ==================== -->
+<div class="loader"></div>
+
+    <div class="site-container">
+        <header>
             <div class="header_logo">
-              <img src="./Carty_Melanie_2_images_110123/logo/ohmyfood.png" alt="Ohmyfood logo">
-            </div> 
-      </section>
-     </header> 
-        
-  <!-- RESTAURANTS HOMEPAGE ==================== -->  
-    
-  <section id="sec_maincontent">  
-                
-             
-        <section class="cards-container">        
-    <div id="homepage"></div>
-            <div class="homepage"> 
-    
-                <div class="sec_header">
-                        <div class="Restaurants-header">
-                          <h2><span>Restaurants</span></h2>
-                </div>
-              </div>
+                <img src="./images/logo/ohmyfood@2x.svg" alt="Ohmyfood logo">
+            </div>
+
+            <div class="location">
+                <i class="fa-sharp fa-solid fa-location-dot"></i>
+                <h4>Paris, Belleville</h4>
+            </div>
+
+        </header>
+
+        <!-- EXPLORE SECTION ==================== -->
+
+        <section id="sec_discover">
+            <div class="book">
+                <h1>Book the menu you like</h1>
+                <p>Discover top-of-the-art restaurants we've picked for you</p>
+
+                <discover>
+                    <button class="explore">
+                        <span class="button_label_text">Explore our restaurants</span>
+                    </button>
+                </discover>
+            </div>
+
+        </section>
+
+        <!-- HOW IT WORKS SECTION ==================== -->
+
+        <section class="howto">
             
-    
-                 <div class="cards-container">
-                        <div class="card-restaurant">
-                        
-                        <a href="./#"><img src="./Carty_Melanie_2_images_110123/restaurants/the-full-palette.jpg" alt="The Full Palette"></a>               
-                        <span class="card-title"><a href="./#">The Full Palette</a></span> 
-                        <span class="card-description">
-                            New York
-                            <i class="fa-light fa-heart"></i>
-                            <div class="lds-heart"><div></div></div>
-                        </span>
 
-                        </div>
-    
-                    <div class="card-hotel">
-                        
-                        <a href="./#"><img src="./Carty_Melanie_1_images_050123/accommodation/image_2/Hotel-du-port_m_480w.jpg" alt="Hôtel du Port"></a>
-                        <span class="card-title"><a href="./#">Hôtel du Port</a></span> 
-                        <span class="card-description">
-                            Night starting at 52
-                            <i class="fa-solid fa-euro-sign"></i>
-                        </span>
-                    
-                    
-    
-                        <span class="card-rating-solid">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                       </span>
-    
-                    
-                    
+            <div class="mini-cards-container">
+                <div class="how-to-header">  
+                    <h2>How it works</h2>
                     </div>
-    
-                    <div class="card-hotel">
-                        
-                        <a href="./#"><img src="./Carty_Melanie_1_images_050123/accommodation/image_3/Les-mouettes-hotel_m_480w.jpg" alt="Les mouettes Hotel"></a>
-                        <span class="card-title"><a href="./#">Les mouettes Hotel</a></span>
-                        <span class="card-description">
-                            Night starting at 76
-                            <i class="fa-solid fa-euro-sign"></i>
-                        </span>
-                    
-                    
-                        <span class="card-rating-solid">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                       </span>
-    
-                    
-                    
-                    </div>
-    
-                    <div class="card-hotel">
-                        
-                        <a href="./#"><img src="./Carty_Melanie_1_images_050123/accommodation/image_4/Hotel-de-la-mer_m_480w.jpg" alt="Hôtel de la mer"></a>
-                        <span class="card-title"><a href="./#">Hôtel de la mer</a></span>
-                        <span class="card-description">
-                            Night starting at 46
-                            <i class="fa-solid fa-euro-sign"></i>
-                        </span>
-    
-                        <span class="card-rating-solid">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                       </span>
-                    
-                    </div>
-                    <div class="card-hotel">
-                        
-                        <a href="./#"><img src="./Carty_Melanie_1_images_050123/accommodation/image_5/auberge-le-panier_m_480w.jpg" alt="Auberge Le Panier"></a>
-                        <span class="card-title"><a href="./#">Auberge Le Panier</a></span> 
-                        <span class="card-description">
-                            Night starting at 23
-                            <i class="fa-solid fa-euro-sign"></i>
-                        </span>
-    
-                        <span class="card-rating-solid">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                       </span>
-    
-                    
-                    </div>
-    
-                    <div class="card-hotel">
-                        
-                        <a href="./#"><img src="./Carty_Melanie_1_images_050123/accommodation/image_6/hotel-chez-amina_m_480w.jpg" alt="Hôtel chez Amina"></a>
-                        <span class="card-title"><a href="./#">Hôtel chez Amina</a></span>
-                        <span class="card-description">
-                            Night starting at 96
-                            <i class="fa-solid fa-euro-sign"></i>
-                        </span>
-    
-                        <span class="card-rating-solid">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                       </span>
-                       
-                    </div>
-    
+                <div class="mini-card">
+                    <p class="number">1</p>
+                    <i class="fa-solid fa-mobile-screen-button"></i>
+                    <p class="mini-card-text">Choose a restaurant</p>
                 </div>
 
-    <!-- FOOTER SECTION  DO NOT USE LIST ==================== -->
+                <div class="mini-card">
+                    <p class="number">2</p>
+                    <i class="fas fa-list-ul fa-lg icon-fonction"></i>
+                    <p class="mini-card-text">Create your menu</p>
+                </div>
+
+                <div class="mini-card">
+                    <p class="number">3</p>
+                    <i class="fa-sharp fa-solid fa-store"></i>
+                    <p class="mini-card-text">Go enjoy it at the restaurant</p>
+                </div>
+            </div>
+</body>
+</section>
+
+<!-- RESTAURANT SELECTION CONTAINER AND CARDS ==================== -->
+<section>
+
+<div class="big-cards-container">
+
+    <div class="restaurants-header">
+        <h2>Restaurants</h2>
+    </div>
+
+   
+    <section id="menu1">
+    <a href="./menu1.html">
+        
+        <div class="big-card">
+			<img src="./images/restaurants/the-full-palette.jpg" alt="The Full Palette">
+			<div class="card-details">
+				<div>
+					<p class="card-title"><strong>The Full Palette</strong> </p>
+					<p class="card-description">Paris</p>
+				</div>
+				<span class="fa-stack fa-2x">
+					<span class="fa-regular fa-heart fa-stack-2x"></span>
+					<span class="fa-solid fa-heart fa-stack-2x"></span>
+				  </span>        
+			</div>
+			<p class="new">New</p>
+		</div>
+	</a>
+	</section>
+
+	<section id="menu2">
+    <a href="./#">
+		<div class="big-card">
+            <img src="./images/restaurants/the-enchanted-plate.jpg" alt="The Enchanted Plate">            
+            <div class="card-details">
+				<div>
+					<p class="card-title"><strong>The Enchanted Plate</strong> </p>
+					<p class="card-description">Paris</p> 
+				</div>
+				<span class="fa-stack fa-2x">
+					<span class="fa-regular fa-heart fa-stack-2x"></span>
+					<span class="fa-solid fa-heart fa-stack-2x"></span>
+				</span>        
+			</div>
+			<p class="new">New</p>
+		</div>
+    </a>
+	</section>
+       
+
+    <a href="./#">
+		<div class="big-card">
+            <img src="./images/restaurants/bastille.jpg" alt="Bastille">            
+            <div class="card-details">
+				<div>
+					<p class="card-title"><strong>Bastille</strong> </p>
+					<p class="card-description">Paris</p> 
+			</div>
+            <span class="fa-stack fa-2x">
+				<span class="fa-regular fa-heart fa-stack-2x"></span>
+				<span class="fa-solid fa-heart fa-stack-2x"></span>
+			</span>       
+		</div>           
+        <p class="new">New</p>
+		</div>
+    </a>
+
+       
+   <a href="./#">
+		<div class="big-card">
+            <img src="./images/restaurants/le-gourmand.jpg" alt="Le Gourmand">          
+            <div class="card-details">
+				<div>
+					<p class="card-title"><strong>Le Gourmand</strong> </p>
+					<p class="card-description">Paris</p> 
+				</div>
+				<span class="fa-stack fa-2x">
+					<span class="fa-regular fa-heart fa-stack-2x"></span>
+					<span class="fa-solid fa-heart fa-stack-2x"></span>
+				</span>
+			</div>
+			<p class="new">New</p>
+		</div>
+   </a>
+
     
+</div>
 
-    </body>
-
-
-
-    </head>
+</section>
 
 
 
+<!-- FOOTER ==================== -->
+
+<section class="footer_info">
+    <div class="footer-cards-container">
+        <div class="footer_logo">
+            <img class="resize" src="./images/logo/ohmyfood.png" alt="Ohmyfood logo">
+        </div>
+
+        <div class="footer-card1">
+            <a href="./#"><i class="fa-solid fa-utensils"></i>
+            <p class="footer-heading">Suggest a restaurant</p></a>
+        </div>
+        
+
+        <div class="footer-card2">
+            <a href="./#"><i class="fa-regular fa-handshake"></i>
+            <p class="footer-heading">Become a partner</p></a>
+        </div>
+        
+
+        <div class="footer-card3">
+            <a href="./#"><p>Legal</p></a>
+        </div>
+
+        <div class="footer-card4">
+            <a href="mailto:info@ohmyfood.com"><p>Contact</p></a>
+        </div>
+    </div>
+    </div>
+
+</section>
+</body>
 </html>

@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- STANDARD INFORMATION -->
+
+    <title>The Full Palette menu</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description"
+        content="Choose from the Full Palette's extensive menu, then submit your choices on the Ohmyfood luxury online food ordering company. You're in control of creating your menu before even stepping foot in our gastronomic restaurant.">
+
+    <!-- Font Awesome, stylesheet and relevant font library -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link href="style.css" type="text/css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700;900&family=Shrikhand&display=swap" rel="stylesheet">
+        
+        
+    <style>
+    
+    .site-container {
+      width: 670px;
+      max-width: 678px;
+      min-width: 350px;
+      width: 95%;
+      display: block;
+    }
+    /*MENU PAGES LINKS
+    body.menu1 {background: url();} 
+    body.menu2 {background: url();}
+    body.menu3 {background: url();}
+    body.menu3 {background: url();}
+    */
+    
+    /* LOGO AND IMAGE SECTION ====================*/
+    
+    .header_logo {
+      margin-left: 80px;
+      margin-top: 15px;
+      margin-bottom: 10px;
+    }
+    
+    .menu-image {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 20%;
+      width: 150%;
+      /*background-image: ;*/
+    }
+    
+    
+    /*RESTAURANT MENU CONTAINER, AND CARDS ====================*/
+    
+    .menu-cards-container {
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      gap: 25px;
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-top: 50px;
+      border-top-left-radius: 30px;
+      border-top-right-radius: 40px;
+      padding-bottom: 10px;
+      background-color: #e9e4e4;
+      opacity: 1;
+      transition: 0.5s all ease-in-out;
+    }
+
+    .menu-cards-container .card-details .restaurant-title {
+        font-size: 30px;
+        font-family: shrikhand;
+        padding-bottom: 50px;
+    }
+
+    /*HEART ICON ==================== */
+    
+    span.fa-regular{
+      color: gray;
+      opacity: 1;
+      transition: 0.5s all ease-in-out;
+    }
+    span.fa-solid{
+      color: orange;
+      opacity: 0;
+      transition: 0.5s all ease-in-out;
+    }
+    
+    span.fa-solid.fa-heart:hover{
+      color: orange;
+      opacity: 1;
+      cursor: pointer;
+    }
+
+    /*MENU CARD DETAILS ====================*/
+    .menu-cards-container .sub-title a:hover {
+    color: #99E2D0;
+
+    border-bottom: 2px solid #99E2D0;
+
+    }
+
+    .menu-cards-container .menu-card {
+      display: flex;
+      flex-direction: column;
+      height: 30px;
+      background-color: #f2f2f2;
+      border-radius: 15px;
+      margin-right: 10px;
+      padding-top: 15px;
+      padding-left: 15px;
+      padding-bottom: 20px;
+      filter: drop-shadow(0 5px 3px #d0d0d0);
+    }
+    
+    .menu-cards-container .menu-card:hover {
+      filter: drop-shadow(0 5px 3px #929292);
+    }
+    
+
+.card-info{
+  display: flex;
+  flex-direction: column;
+  padding-left: 75%;
+  height: 30px;
+  width: 15%;
+  transition: all 1.0s ease-in-out;
+}
+
+.hidden-control span:nth-of-type(1){
+  
+  text-align: right;
+  margin-top: -20px;
+}
+
+.hidden-control  .check{
+  size: 7px;
+  display: flex;
+  color: #99E2D0;
+  background-color: #ffffff;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  height: 25px;
+  width: 25px;
+  animation: backwards;
+}
+
+  .hidden-control{
+  background: #99E2D0;
+  border-radius: 3px;
+  padding: 10px 0px;
+  width: 0%;
+  overflow: hidden;
+  transition: all 0.5s ease-in-out;
+  text-align: center;
+}
+
+.menu-card:hover .hidden-control{
+  width: 5%;
+  padding: 5px 3%;
+}
+
+
+    /* CODE PEN END */
+        
+    .menu-cards-container .menu-card .card-title {
+    font-weight:bold;
+    padding-left: 1px;
+    padding-bottom: 4px;
+    }
+    
+    .menu-cards-container .menu-card .card-description {
+    font-size: 12px;
+    }
+
+    .menu-cards-container .menu-card .card-cost {
+    font-weight: bold;
+    font-size: 12px;
+    padding-left: 90%;
+    padding-bottom: 20%;
+    }
+    
+    /* L0ADER */
+
+    .loader {
+      border: 8px solid #f3f3f3; /* Light grey */
+      border-top: 8px solid #5762d9; /* blue */
+      border-right: 8px solid #5762d9;
+      border-bottom: 8px solid#5762d9;
+      border-left: 8px solid #aeadaa;
+    
+      border-radius: 50%; 
+      width: 10px;
+      height: 10px;
+      animation: spin 1s linear infinite, unshow 3s linear 1;
+      opacity: 0;
+    
+    /* Absolute Center Spinner */
+    
+    position: fixed;
+    z-index: 999;
+    overflow: show;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    }
+    
+    @keyframes unshow {
+      0% { opacity: 1.0; }
+      100% { opacity: 0.0; }
+    }
+    
+    @keyframes spin {
+      30% { transform: rotate(30deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    /* ORDER BUTTON */
+
+    .order {
+      background-color: #881b69;
+      border: 1px solid #f2f2f2;
+      color: #f2f2f2;
+      width:95px;
+      margin-top: 20px;
+      margin-left: 30%;
+      padding-top: 10px;
+      padding-right: 85px;
+      padding-bottom: 10px;
+      padding-left: 50px;
+      border-radius: 50px;
+      justify-content: center;
+      filter: drop-shadow(0 5px 3px #d0d0d0);
+      position:static;
+    }
+
+    .order:hover {
+      filter: drop-shadow(0 5px 3px #929292);
+    }
+        
+    </style>
+
+
+    <body>  
+
+<!-- MENU ONE DETAILS -->
+
+      
+        <div class="loader"></div>
+
+        <!-- lOGO AND IMAGE SECTION -->
+
+        <div class="site-container">
+            <header>
+                <div class="header_logo">
+                    <img src="./Carty_Melanie_2_images_110123/logo/ohmyfood@2x.svg" alt="Ohmyfood logo">
+        </div>
+      
+
+    <!-- RESTAURANT MENU CONTAINER, HEART AND CARDS -->
+
+    
+    <a href="./#">
+        <div class="menu-image">
+
+            <img src="./Carty_Melanie_2_images_110123/restaurants/the-full-palette.jpg" alt="The Full Palette">
+        
+    </div></a>
+    
+    <div class="menu-cards-container">
+    
+                    
+    <div class="card-details">
+    <div>
+    <p class="restaurant-title"><strong>The Full Palette</strong> </p>
+    <p class="sub-name">ENTREES</p>
+                     
+    </div>
+    <span class="fa-stack fa-2x">
+    <span class="fa-regular fa-heart fa-stack-2x"></span>
+    <span class="fa-solid fa-heart fa-stack-2x"></span>
+    </span>
+        
+                
+    </div>
+    </div>
+
+    
+    <!-- MENU CARD DETAILS -->
+
+    <div class="menu-cards-container">
+
+            <div class="menu-card">
+        
+            <span class="card-title"><strong>Escargot</strong></span>
+            <span class="card-description">With southern French spices</span>
+            <span class="card-cost"><p>25<i class="fa-solid fa-euro-sign"></i></p></span>
+            
+        </div>
+
+        <div class="menu-card">
+            
+            <span class="card-title"><strong>Duck Foie Gras</strong></span>
+            <span class="card-description">With black truffle shavings</span>
+            <span class="card-cost"><p>35<i class="fa-solid fa-euro-sign"></i></p></span>
+        </div>
+
+
+        
+        <div class="menu-card">
+            <div class="card-info">
+            <span class="card-title"><strong>Fried egg</strong></span>
+            <span class="card-description">Seasoned with truffle cream and Pomme Puree</span>
+            <span class="card-cost"><p>20<i class="fa-solid fa-euro-sign"></i></p></span>
+            </div>
+            <div class="hidden-control">
+                <div class="check"><i class="fa-solid fa-check"></i></div>
+            </div>
+        
+        
+        
+        </div>
+
+        <p class="sub-name">MAIN DISH</p>
+
+        <div class="menu-card">
+            
+            <span class="card-title"><strong>Herb-Encrusted Steak</strong></span>
+            <span class="card-description">With delicately sliced and seasoned vegetables</span>
+            <span class="card-cost"><p>40<i class="fa-solid fa-euro-sign"></i></p></span>
+        </div>
+        
+        <div class="menu-card">
+            
+            <span class="card-title"><strong>Ox Tail Shepherd's Pie</strong></span>
+            <span class="card-description">With black truffle and pureed parsnips</span>
+            <span class="card-cost"><p>35<i class="fa-solid fa-euro-sign"></i></p></span>
+        </div>
+
+        <div class="menu-card">
+            
+            <span class="card-title"><strong>Fillet of Sole</strong></span>
+            <span class="card-description">With citrus dressing</span>
+            <span class="card-cost"><p>44<i class="fa-solid fa-euro-sign"></i></p></span>
+        </div>
+
+        <p class="sub-name"><strong>DESSERTS</strong> </p>
+
+        <div class="menu-card">
+           
+            <span class="card-title"><strong>Paris-Brest</strong></span>
+            <span class="card-description">Revisité</span>
+            <span class="card-cost"><p>18<i class="fa-solid fa-euro-sign"></i></p></span>
+        </div>
+
+        <div class="menu-card">
+        
+            <span class="card-title"><strong>Chocolate Macaroons</strong></span>
+            <span class="card-description">With vanilla ice cream</span>
+            <span class="card-cost"><p>22<i class="fa-solid fa-euro-sign"></i></p></span>
+            
+        </div>
+
+        <div class="menu-card">
+        
+            <span class="card-title"><strong>Chocolate Mousse</strong></span>
+            <span class="card-description">With spices and black truffle</span>
+            <span class="card-cost"><p>23<i class="fa-solid fa-euro-sign"></i></p></span>
+        </div>
+
+        <!-- ORDER BUTTON -->
+
+        <button class="order">
+            <span class="button_label_text">Order</span>
+        </button>
+
+    </div>
+    
+
+        
+    
+    
+    
+    
+    
+    
+    
+      
+    
+
+    </div>
+
+
+
+    </body>
+    
+    </head>
+</html>
